@@ -133,10 +133,10 @@ address
 contactno
 
 
-👨‍💻 Developer
+👨‍💻 Developer:-  
           Samarth Adhao
 
 
 
-GitHub:-
+GitHub:-  
 https://github.com/samarth8698
