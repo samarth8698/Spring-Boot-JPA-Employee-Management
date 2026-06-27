@@ -17,6 +17,8 @@ This application provides complete CRUD operations for managing employee records
 - Axios API Communication
 - Responsive User Interface
 
+
+
 ## 🛠️ Tech Stack
 
 ### Backend
@@ -37,6 +39,8 @@ This application provides complete CRUD operations for managing employee records
 - MySQL Workbench
 - Git
 - GitHub
+
+
 
 ## 📁 Project Structure:-
 
@@ -66,7 +70,9 @@ Spring-Boot-JPA-Employee-Management
 └── Student.sql
 
 
+
 ## ⚙️ Installation & Setup
+
 
 ### Clone Repository
 
@@ -109,16 +115,13 @@ PUT	/api/employees/{id}	Update Employee
 DELETE	/api/employees/{id}	Delete Employee
 💾 Database Details
 
-Database Name:
-
+Database Name:-
 Student
 
-Table Name:
-
+Table Name:-
 Employee
 
-Employee Fields:
-
+Employee Fields:-
 id
 name
 email
@@ -129,9 +132,11 @@ experience
 address
 contactno
 
-👨‍💻 Developer
 
-Samarth Adhao
+👨‍💻 Developer
+          Samarth Adhao
+
+
 
 GitHub:-
 https://github.com/samarth8698
