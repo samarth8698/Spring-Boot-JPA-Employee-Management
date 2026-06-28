@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# 💻 Employee Management System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern and responsive frontend for the **Employee Management System** built using **React.js**. The application communicates with the Spring Boot backend through REST APIs and provides an easy-to-use interface for managing employee records.
 
-## Available Scripts
 
-In the project directory, you can run:
+# 🚀 Features:-
 
-### `npm start`
+- Employee List
+- Add Employee
+- Update Employee
+- Delete Employee
+- Responsive User Interface
+- REST API Integration
+- Component-Based Architecture
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 🛠️ Technologies Used:-
 
-### `npm test`
+- React.js
+- JavaScript (ES6)
+- HTML5
+- CSS3
+- Bootstrap
+- Axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# 📂 Project Structure:-
+reactproject
+│
+├── public/
+│
+├── src/
+│   ├── Components/
+│   │   ├── EmployeeForm.js
+│   │   └── EmployeeList.js
+│   │
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   └── App.test.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# ⚙️ Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository
 
-### `npm run eject`
+bash
+git clone https://github.com/samarth8698/Spring-Boot-JPA-Employee-Management.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate to frontend folder
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+cd Frontend/reactproject
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies
 
-## Learn More
+bash
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+npm start
 
-### Code Splitting
+Frontend runs on:-
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# 🔗 Backend:-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the Spring Boot backend before starting the frontend.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend URL:-
+http://localhost:8080
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# 📁 Architecture:-
+React Components
+        │
+Axios REST API Calls
+        │
+Spring Boot Backend
+        │
+Spring Data JPA
+        │
+MySQL Database
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 📌 Future Enhancements:-
 
-### `npm run build` fails to minify
+- Search Employees
+- Pagination
+- Form Validation
+- Authentication
+- Dashboard
+- Responsive Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 👨‍💻 Developer:-
+**Samarth Adhao**
+
+
+GitHub:-
+https://github.com/samarth8698
