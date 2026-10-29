@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/employees")
 @CrossOrigin(origins = {
-	    "http://localhost:3000",
-	    "http://localhost:3001"
-	})
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://employee-management-system-frontend-sepia.vercel.app"
+})
 public class EmployeeController {
-
     @Autowired
     private EmployeeRepos repo;
 
