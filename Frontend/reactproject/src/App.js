@@ -1,55 +1,62 @@
 import React, { useEffect, useState } from "react";
-
 import axios from "axios";
 
 import EmployeeForm from "./Components/EmployeeForm";
 import EmployeeList from "./Components/EmployeeList";
 
-function App() 
-{
+const API_URL =
+  "https://spring-boot-jpa-employee-management.onrender.com/api/employees";
+
+function App() {
   const [employees, setEmployees] = useState([]);
   const [editEmployee, setEditEmployee] = useState(null);
 
-  // const [editFormToggel, setEditFormToggel] = useState(false);
+  const getEmployees = async () => {
+    try {
+      const { data } = await axios.get(API_URL);
+      setEmployees(data);
+    } catch (error) {
+      console.error("Error fetching employees:", error);
+    }
+  };
 
-  const getEmployees = async () =>
-  {
-    const { data } = await axios.get("http://localhost:8080/api/employees");
-    setEmployees(data);
-  }
-
-  useEffect(() =>
-  {
+  useEffect(() => {
     getEmployees();
-  }, [])
+  }, []);
 
-  const addEmployee = async (employee) => 
-  {
-    //setEmployees([...employees, { ...employee, id: Date.now() }]);
-    await axios.post("http://localhost:8080/api/employees", employee);
-
-    const { data } = await axios.get("http://localhost:8080/api/employees");
-    setEmployees(data);
+  const addEmployee = async (employee) => {
+    try {
+      await axios.post(API_URL, employee);
+      await getEmployees();
+    } catch (error) {
+      console.error("Error adding employee:", error);
+      alert("Failed to add employee. Please try again.");
+    }
   };
 
-  const updateEmployee = async (updatedEmployee) => 
-  {
-   // setEmployees( employees.map((e) => e.id === updatedEmployee.id ? updatedEmployee : e));
-    //setEditEmployee(null);
-    await axios.put("http://localhost:8080/api/employees/" + updatedEmployee.id,updatedEmployee);
+  const updateEmployee = async (updatedEmployee) => {
+    try {
+      await axios.put(
+        `${API_URL}/${updatedEmployee.id}`,
+        updatedEmployee
+      );
 
-    const { data } = await axios.get("http://localhost:8080/api/employees");
-    setEmployees(data);
-    setEditEmployee(null);
+      await getEmployees();
+      setEditEmployee(null);
+    } catch (error) {
+      console.error("Error updating employee:", error);
+      alert("Failed to update employee. Please try again.");
+    }
   };
 
-  const deleteEmployee = async(id) => 
-  {
-    // setEmployees(employees.filter((e) => e.id !== id));
-    await axios.delete("http://localhost:8080/api/employees/" + id);
-
-    const { data } = await axios.get("http://localhost:8080/api/employees");
-    setEmployees(data);
+  const deleteEmployee = async (id) => {
+    try {
+      await axios.delete(`${API_URL}/${id}`);
+      await getEmployees();
+    } catch (error) {
+      console.error("Error deleting employee:", error);
+      alert("Failed to delete employee. Please try again.");
+    }
   };
 
   return (
